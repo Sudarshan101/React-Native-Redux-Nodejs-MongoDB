@@ -42,15 +42,13 @@ class App extends React.Component {
             <Text>Add</Text>
           </Button>
           <List>
-            {
-              this.props.namedata?this.props.namedata.map((item, index)=> (
+            {this.props.namedata?this.props.namedata.map((item, index)=> (
                 <ListItem key={item._id} noIndent style={{ backgroundColor: "#cde1f9" }}>
                   <Left>
                     <Text>{item.name}</Text>
                   </Left>
                 </ListItem>
-            )):null
-          }
+            )):null}
         </List>
         </Content>
       </Container>
